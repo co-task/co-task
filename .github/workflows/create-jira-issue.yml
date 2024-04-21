@@ -8,6 +8,14 @@ jobs: # 3
     name: Create Jira issue # 5
     runs-on: ubuntu-latest # 6
     steps: # 7
+    - name: Extract Jira Ticket Number
+      id: extract_ticket_number
+      run: echo "::set-output name=ticket_number::$(echo ${{ github.event.issue.title }} | grep -oE 'QIHI-[0-9]+')"
+
+    - name: Check if Jira Ticket Number exists
+      if: steps.extract_ticket_number.outputs.ticket_number != ''
+      run: exit 1
+      
     - name: Login
       uses: atlassian/gajira-login@v3 # 8
       env: 
