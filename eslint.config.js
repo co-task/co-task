@@ -6,11 +6,13 @@ module.exports = {
 	parser: '@typescript-eslint/parser',
 	extends: [
 		'airbnb',
+		'airbnb-typescript',
 		'airbnb/hooks',
 		'plugin:import/errors',
 		'plugin:import/warnings',
 		'plugin:prettier/recommended',
 		'plugin:@typescript-eslint/recommended',
+		'plugin:react/jsx-runtime',
 		'prettier',
 	],
 	overrides: [
@@ -26,12 +28,14 @@ module.exports = {
 	],
 	parserOptions: {
 		ecmaVersion: 'latest',
+		ecmaFeatures: {
+			jsx: true,
+		},
 		sourceType: 'module',
-		project: './tsconfig.json',
+		project: './tsconfig.eslint.json',
 	},
-	plugins: ['@typescript-eslint', 'prettier', 'react'],
+	plugins: ['react', '@typescript-eslint', 'prettier'],
 	rules: {
-		'react/react-in-jsx-scope': 'off',
 		'react/jsx-uses-react': 'off',
 		'no-duplicate-imports': 'error',
 		'no-empty-function': 'off',
