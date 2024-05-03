@@ -1,5 +1,6 @@
 import Button from '../../../atoms/Button';
 import Text from '../../../atoms/Text';
+import CategoryButtonGroup from './CategoryButtonGroup';
 import './style.scss';
 const index = () => {
 	const nav = [
@@ -26,14 +27,7 @@ const index = () => {
 			<div className="title">
 				<Text text={'Dashboard'} />
 			</div>
-			{nav.slice(2, 6).map((item) => (
-				<Button
-					text={item.title}
-					type={item.type}
-					icon={item.icon}
-					link={item.link}
-				/>
-			))}
+			<CategoryButtonGroup />
 		</div>
 	);
 };
