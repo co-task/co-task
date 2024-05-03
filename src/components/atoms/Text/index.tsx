@@ -1,9 +1,7 @@
-import "./style.scss"
+import './style.scss';
 
-const index = ({text}:{text:string;}) => {
-  return (
-    <p className="leftSidebarTitle">{text}</p>
-  )
-}
+const index = ({ text }: { text: string }) => {
+	return <p className="leftSidebarTitle">{text}</p>;
+};
 
-export default index
+export default index;

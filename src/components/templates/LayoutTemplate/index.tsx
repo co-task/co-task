@@ -1,14 +1,12 @@
-import LeftSidebar from "../../organisms/CommonLayout/LeftSidebar";
+import LeftSidebar from '../../organisms/CommonLayout/LeftSidebar';
 
-const index = ({children}:{children:any;}) => {
-    
+const index = ({ children }: { children: any }) => {
+	return (
+		<>
+			<LeftSidebar />
+			{children}
+		</>
+	);
+};
 
-  return (
-    <div>
-        <LeftSidebar />
-        {children}
-        </div>
-  )
-}
-
-export default index
+export default index;
