@@ -1,7 +1,5 @@
 # CO-TASK
 
-jira 협업용 토이프로젝트_투두리스트
-
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/team-wetube/wetube-web/assets/140724844/ada83675-4756-43fc-a69a-a6e8a6f4238c">
@@ -23,26 +21,22 @@ todo list 생성: 창작자는 업로드한 할 일을 관리하고 수정할 �
 
 예정) 프로필 관리: 창작자는 유저의 프로필 정보를 관리하고 수정할 수 있습니다.
 
-wetube-service
-TBD
+### Co-Task (투두리스트) 기술 스택
+#### FE
+- Application: React, javascript, typescript
+- UI & Desigin: Sass, Figma
+- Auth: express.js  
+- HTTP: axios
+- Development Environment: webpack, babel, eslint, prettier, husky, lint-staged
+- Package Manager: yarn berry
 
-결과 화면
-<img width="1840" alt="image" src="![image 11](https://github.com/co-task/co-task/assets/117979314/ee8e5a27-4e76-48e9-9d4e-c1a42e4ddc7a)">
-![image 11](https://github.com/co-task/co-task/assets/117979314/ee8e5a27-4e76-48e9-9d4e-c1a42e4ddc7a)
+#### BF
+- Application: Express.js
+- DB: Mongo db
 
-기술 스택
-이 프로젝트는 다음 기술 스택을 사용하여 개발되었습니다:
-Application: React, Next.js, javascript, typescript, apollo-client, yarn workspaces(Lerna+)
-UI & Design: tailwind, styled-components, twin.macro
-Auth: auth.js
-HTTP: axios
-Webserver: Nginx
-Logging: ElasticSearch, Logstash, Kibana
-Testing: Jest
-Development Environment: webpack, babel, eslint, prettier, husky, lint-staged
-Package Manager: yarn berry
-CI/CD: Docker, Kubernetes
-SCM: github (monorepo)
+#### DevOps
+- CI/CD: Docker
+- Release: Vercel
 
 프로젝트 설정
 TBD
