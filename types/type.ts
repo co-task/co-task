@@ -1,4 +1,4 @@
-export type buttonprops = {
+export type Buttonprops = {
 	type: string;
 	text: string;
 	icon: string;

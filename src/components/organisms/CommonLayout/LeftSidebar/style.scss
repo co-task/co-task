@@ -4,7 +4,17 @@
 	padding: 0 0 1rem 1rem;
 	display: flex;
 	flex-direction: column;
+
+
+	.favoriterecently{
+		display:flex;
+		justify-content:start;
+		gap: 1rem;
+		font-size: 14px;
+		
+	}
 	.title {
+		font-size: 14px;
 		margin: 20px 15px 0 0;
 	}
 }

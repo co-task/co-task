@@ -1,7 +1,8 @@
-import { buttonprops } from '../../../types/type';
+import { FC } from 'react';
+import {Buttonprops} from '../../../../types/type';
 import './style.scss';
 
-const index = ({ type, icon, text, link }: buttonprops) => {
+const index: FC<Buttonprops>= ({ type, icon, text, link }) => {
 	return type === 'iconbutton' ? (
 		<button className="leftSidebarButton">
 			{icon}

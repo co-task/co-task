@@ -1,20 +1,19 @@
+import { nav } from '../../../../data/LeftSideBarDate';
 import Button from '../../../atoms/Button';
 import Text from '../../../atoms/Text';
 import CategoryButtonGroup from './CategoryButtonGroup';
+import UserProfile from './UserProfile';
 import './style.scss';
+
 const index = () => {
-	const nav = [
-		{ title: 'Today', icon: '', type: '', link: '' },
-		{ title: 'Upcomming', icon: '', type: '', link: '' },
-		{ title: 'Calendar', icon: '', type: 'iconbutton', link: '' },
-		{ title: 'Inbox', icon: '', type: 'iconbutton', link: '' },
-		{ title: 'Trash', icon: '', type: 'iconbutton', link: '' },
-		{ title: 'User Profile', icon: '', type: 'iconbutton', link: '' },
-	];
 	return (
 		<div className="leftSidebarButtonWrap">
 			<div className="profile">
-				<Button text="hyunjiSon" type="iconbutton" icon="" link="" />
+			<UserProfile />
+			</div>
+			<div className='favoriterecently'>
+			<Text text={'Favorites'} />
+			<Text text={'Rencently'} />
 			</div>
 			{nav.slice(0, 2).map((item) => (
 				<Button
