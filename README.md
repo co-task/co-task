@@ -5,13 +5,9 @@
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/team-wetube/wetube-web/assets/140724844/ada83675-4756-43fc-a69a-a6e8a6f4238c">
     <img src="https://github.com/co-task/co-task/assets/117979314/c4f26926-924e-477d-a71f-49e3363290e9" height="300">
   </picture>
-  <h1 align="center">co-task</h1>
 </p>
 
-프로젝트의 개요
-이 프로젝트는 유튜브 웹 서비스를 클론하여 만든 웹 애플리케이션입니다.<br>이 README.md 파일은 프로젝트의 개요, 기능, 결과 화면을 서술합니다.
-
-프로젝트의 기능
+###프로젝트의 기능
 
 로그인 및 회원가입: 창작자는 계정을 만들고 로그인할 수 있습니다. (Google OAuth2)
 
