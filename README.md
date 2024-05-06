@@ -7,7 +7,7 @@
   </picture>
 </p>
 
-#프로젝트의 기능
+# 프로젝트의 기능
 
 로그인 및 회원가입: 창작자는 계정을 만들고 로그인할 수 있습니다. (Google OAuth2)
 
@@ -34,12 +34,12 @@ todo list 생성: 창작자는 업로드한 할 일을 관리하고 수정할 �
 - CI/CD: Docker
 - Release: Vercel
 
-프로젝트 설정
+# 프로젝트 설정 <br />
 TBD
 
-개발자
-Hyunji Son (@sirri1222)
+# 개발자
+Hyunji Son (@sirri1222) <br />
 YeEun Lee (@MaraisLee)
 
-라이선스
+# 라이선스
 TBD
