@@ -1,14 +1,14 @@
-import { nav } from "../../../../../data/LeftSideBarDate";
+import {Buttonprops} from "../../../../../../types/type";
 import Button from "../../../../atoms/Button"
 import '../../LeftSidebar/style.scss';
 
-const index = () => {
+const index = ({navdata}:{navdata:Buttonprops[]}) => {
    
   return (
     <>
-        {nav.slice(2, 6).map((item) => (
+        {navdata.slice(2, 6).map((item) => (
         <Button
-            text={item.title}
+            title={item.title}
             type={item.type}
             icon={item.icon}
             link={item.link}

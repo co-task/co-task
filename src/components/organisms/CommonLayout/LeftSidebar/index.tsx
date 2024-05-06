@@ -1,4 +1,4 @@
-import { nav } from '../../../../data/LeftSideBarDate';
+import { Buttonprops } from '../../../../../types/type';
 import Button from '../../../atoms/Button';
 import Text from '../../../atoms/Text';
 import CategoryButtonGroup from './CategoryButtonGroup';
@@ -6,6 +6,14 @@ import UserProfile from './UserProfile';
 import './style.scss';
 
 const index = () => {
+	 const nav:Buttonprops[] = [
+		{ title: 'Today', icon:'', type: '', link: '' },
+		{ title: 'Upcomming', icon:'', type: '', link: '' },
+		{ title: 'Calendar', icon:'', type: 'iconbutton', link: '' },
+		{ title: 'Inbox', icon:'', type: 'iconbutton', link: '' },
+		{ title: 'Trash', icon:'', type: 'iconbutton', link: '' },
+		{ title: 'User Profile', icon:'', type: 'iconbutton', link: '' },
+	];
 	return (
 		<div className="leftSidebarButtonWrap">
 			<div className="profile">
@@ -17,7 +25,7 @@ const index = () => {
 			</div>
 			{nav.slice(0, 2).map((item) => (
 				<Button
-					text={item.title}
+				title={item.title}
 					type={item.type}
 					icon={item.icon}
 					link={item.link}
@@ -26,7 +34,7 @@ const index = () => {
 			<div className="title">
 				<Text text={'Dashboard'} />
 			</div>
-			<CategoryButtonGroup />
+			<CategoryButtonGroup navdata={nav} />
 		</div>
 	);
 };

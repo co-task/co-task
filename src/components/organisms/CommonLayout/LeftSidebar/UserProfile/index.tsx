@@ -5,7 +5,7 @@ import Button from '../../../../atoms/Button'
 const index:React.FC = () => {
   return (
     <>
-   	<Button text="hyunjiSon" type="iconbutton" icon="" link="" />
+   	<Button title="hyunjiSon" type="iconbutton" icon="" link="" />
     </>
   )
 }

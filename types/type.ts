@@ -1,6 +1,6 @@
-export type Buttonprops = {
+ export type Buttonprops = {
+	title:string;
 	type: string;
-	text: string;
-	icon: string;
+	icon: React.ReactNode;
 	link: string;
 };
