@@ -8,6 +8,7 @@ const index = ({navdata}:{navdata:Buttonprops[]}) => {
     <>
         {navdata.slice(2, 6).map((item) => (
         <Button
+            key={item.title}
             title={item.title}
             type={item.type}
             icon={item.icon}

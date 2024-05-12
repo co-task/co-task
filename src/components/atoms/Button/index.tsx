@@ -5,7 +5,7 @@ import './style.scss';
 const index: FC<Buttonprops>= ({ type, icon, title, link }) => {
 	return type === 'iconbutton' ? (
 		<button className="leftSidebarButton">
-			{icon}
+			<span>{icon}</span>
 			{title}
 		</button>
 	) : (
