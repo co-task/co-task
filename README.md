@@ -1,5 +1,6 @@
 # CO-TASK
 
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/team-wetube/wetube-web/assets/140724844/ada83675-4756-43fc-a69a-a6e8a6f4238c">
@@ -43,3 +44,4 @@ YeEun Lee (@MaraisLee)
 
 ### 라이선스
 TBD
+

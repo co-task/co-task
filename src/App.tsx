@@ -1,11 +1,10 @@
 import './App.css';
+import RightSidebar from './components/organisms/CommonLayout/UpSidebar';
 
 function App() {
 	return (
-		<div>
-			CO-TASK
-			<p>테스트</p>
-		</div>
+		<>
+		</>
 	);
 }
 
